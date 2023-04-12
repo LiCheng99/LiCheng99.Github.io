@@ -1,0 +1,1 @@
+var posts=["2023/04/12/Build station - 副本/","2023/04/12/Build station/","2023/04/12/Github - Gitee - 副本/","2023/04/12/Markdown - 副本/","2023/04/02/Github - Gitee/","2023/04/01/Markdown/","2023/04/12/hello-world - 副本/","2023/04/12/剪映 - 副本/","2023/04/05/剪映/","2023/04/11/hello-world/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
