@@ -1305,6 +1305,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 *::-webkit-scrollbar {
   width: 8px;
@@ -1328,7 +1332,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255,0);
+  background: rgba(255,56,166,0.06);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -2851,84 +2855,6 @@ figure.highlight pre .javascript .function {
     padding: 10px;
   }
 }
-#recent-posts {
-  margin-top: -1rem;
-  -ms-flex-line-pack: start;
-  -webkit-align-content: flex-start;
-  align-content: flex-start;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-}
-#recent-posts>.recent-post-item {
-  margin-top: 1rem;
-  display: inline-block;
-  height: auto;
-  width: 49%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: auto !important;
-}
-#recent-posts>.recent-post-item .post_cover {
-  width: 100%;
-  height: 200px;
-}
-#recent-posts>.recent-post-item .post_cover img.post_bg {
-  width: 100%;
-  height: 100%;
-}
-#recent-posts>.recent-post-item .recent-post-info>.content {
-  display: none;
-}
-#recent-posts>.recent-post-item .left_radius {
-  border-radius: 8px 8px 0 0;
-}
-#recent-posts>.recent-post-item .right_radius {
-  border-radius: 8px 8px 0 0;
-}
-#recent-posts>.recent-post-item .recent-post-info {
-  width: 100%;
-}
-#recent-posts>.recent-post-item .recent-post-info >.article-title {
-  -webkit-line-clamp: 1;
-  margin-top: 0.3rem;
-  margin-bottom: 0.3rem;
-  color: var(--text-highlight-color);
-  font-size: 1.2em;
-  line-height: 1.4;
-}
-#recent-posts>.recent-post-item .recent-post-info >.article-meta-wrap {
-  margin-bottom: 1rem;
-}
-@media screen and (max-width: 768px) {
-  #recent-posts>.recent-post-item {
-    width: 100%;
-  }
-  #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator {
-    display: none;
-  }
-}
 body[data-type="music"] {
   background: #0d0d0d;
 }
@@ -4373,6 +4299,7 @@ h1.page-title + .tag-cloud-list {
   padding: 40px 20px;
   color: var(--light-grey);
   text-align: center;
+  background-color: rgba(255,56,166,0.06);
 }
 #footer-wrap a {
   color: var(--light-grey);
@@ -11147,7 +11074,7 @@ body:has(.post-bg) #he-plugin-simple .s-sticker div {
   font-size: 0 !important;
 }
 .wv-lt-refresh a::after {
-  content: "李程和风";
+  content: "程 - 和风天气";
   font-size: small !important;
 }
 .vw-f-cell a,
@@ -19014,8 +18941,8 @@ div#runtime {
   border-radius: 4px;
 }
 #workboard img.boardsign {
-  width: 100%;
-  max-width: 130px;
+  width: 0%;
+  max-width: 0px;
 }
 @-moz-keyframes flashlight {
   from {
