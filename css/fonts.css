@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SanJiLuoLiHei-2';
+    font-display: swap;
+    src: url('../fonts/SanJiLuoLiHei-2.ttf') format("truetype");
+}
+
+body {
+    font-family: 'SanJiLuoLiHei-2';
+}
