@@ -12,7 +12,7 @@
     color: var(--global-bg);
     padding: 15px;
     border-radius: 40px;
-    background: #ff38a6;
+    background: var(--licheng-main);
     align-items: center;
 }
 
@@ -34,5 +34,5 @@ button {
 }
 .addBtn button:hover {
     background: var(--theme-color);
-    color: #ff38a6;
+    color: var(--licheng-main);
 }

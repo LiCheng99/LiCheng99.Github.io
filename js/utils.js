@@ -517,7 +517,7 @@ const anzhiyu = {
     let evt = document.createEvent("HTMLEvents");
     evt.initEvent("input", true, true);
     input.value =
-      "昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n";
+    "昵称 - name: \n网站地址  link: \n头像图片url  avatar: \n描述  descr: \n";
     input.dispatchEvent(evt);
     input.focus();
     input.setSelectionRange(-1, -1);

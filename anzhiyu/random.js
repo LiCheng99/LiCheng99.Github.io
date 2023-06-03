@@ -1,1 +1,1 @@
-var posts=["posts/closingceremony.html","posts/cybersecurity.html","posts/openingceremony.html","posts/vocalization.html","posts/vscode-plugins.html"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["posts/hexo-blog-cn.html","posts/openingceremony.html","posts/closingceremony.html","posts/vocalization.html","posts/vscode-plugins.html","posts/cybersecurity.html","posts/vue-databroker.html","posts/vue-datahijacking.html"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
